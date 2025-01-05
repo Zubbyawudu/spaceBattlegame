@@ -110,3 +110,8 @@ p {
   font-family: "roboto";
   font-size: 30px;
 }
+.battlehistory {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
