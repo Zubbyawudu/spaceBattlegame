@@ -117,3 +117,13 @@ const battle = (humanShip, AlienShip) => {
   }
 
 }
+
+// Main game function 
+const game = () => {
+  const humanShips = new humanShip();
+  const alienShips = [
+    { name: "AlienShip 1", hull: 4, firepower: 2, accuracy: 0.6 },
+    { name: "AlienShip 2", hull: 5, firepower: 3, accuracy: 0.7 },
+    { name: "AlienShip 3", hull: 6, firepower: 4, accuracy: 0.8 },
+  ];
+}
