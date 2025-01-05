@@ -155,3 +155,17 @@ const game = () => {
   }
 
 }
+
+// Start Game Function
+
+const startGame = () => {
+  humanAircraft.style.display = "flex";
+  alienAircraft.style.display = "flex";
+  startGameIcon.style.display = "none";
+  header.style.display = "none";
+  headerStart.style.display = "block";
+  startbtn.style.display = "block";
+  
+
+}
+startGameIcon.addEventListener("click", startGame);
