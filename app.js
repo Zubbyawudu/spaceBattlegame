@@ -68,18 +68,26 @@ class AlienShip extends Ship {
   }
 }
 
-class Alienship1 extends Ship {
-  constructor(){
-    super("Alienship 1", 4 , 2, .6);
-  }
-}
-class Alienship2 extends Ship {
-  constructor(){
-    super("Alienship 2", 5 , 3, .7);
-  }
-}
-class Alienship3 extends Ship {
-  constructor(){
-    super("Alienship 3", 6 , 3, .8);
+// class Alienship1 extends Ship {
+//   constructor(){
+//     super("Alienship 1", 4 , 2, .6);
+//   }
+// }
+// class Alienship2 extends Ship {
+//   constructor(){
+//     super("Alienship 2", 5 , 3, .7);
+//   }
+// }
+// class Alienship3 extends Ship {
+//   constructor(){
+//     super("Alienship 3", 6 , 3, .8);
+//   }
+// }
+
+//create the battle logic 
+const battle = (humanShip, AlienShip) => {
+
+  while (humanShip.hull > 0 && AlienShip.hull > 0) {
+    console.log(`Your hull: ${humanShip.hull}, AlienShip hull: ${AlienShip.hull}`);
   }
 }
