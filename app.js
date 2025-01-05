@@ -149,4 +149,9 @@ const game = () => {
     }
   }
 
+  if (humanShips.hull > 0) {
+    
+    console.log('You have destroyed all the aliens and won the game!');
+  }
+
 }
