@@ -45,3 +45,17 @@ class ship{
   
 }
 
+// create a class for humanShip
+class humanShip extends Ship{
+  constructor(name, hull , firepower, accuracy){
+    super("USS Assembly", 20 , 5, .7);
+  }
+}
+
+// create a class for alienShip
+constructor() {
+  const hull = Math.floor(Math.random() * 4) + 3;  // generate a random hull  between 3 and 6
+  const firepower = Math.floor(Math.random() * 3) + 2;  // generate a random firepower  between 2 and 5
+  const accuracy = Math.random() * 0.2 + 0.6;  // generate a random accuracy between 0.6 and 0.8
+  super(hull, firepower, accuracy);
+}
