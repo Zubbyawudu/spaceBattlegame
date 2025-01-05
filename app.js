@@ -24,20 +24,20 @@ class ship{
   attack(target) {
     const hitChance = Math.random();
     if (hitChance < this.accuracy) {
-      gameHistory.appendChild(document.createElement("p")).textContent = `${this.name} hits ${target.name}!`
+      gameHistory.appendChild(document.createElement("p")).textContent = `${this.name} shoots ${target.name}!`
       
       console.log(`${this.name} hits ${target.name}!`);
       
       target.hull -= this.firepower;
 
-      gameHistory.appendChild(document.createElement("p")).textContent =`${target.name}'s hull is now ${target.hull}`
+      gameHistory.appendChild(document.createElement("p")).textContent =`${target.name}'s lifeline is now ${target.hull}`
 
       console.log(`${target.name}'s hull is now ${target.hull}`);
     } else {
       
       console.log(`${this.name} missed the attack!`);
 
-      gameHistory.appendChild(document.createElement("p")).textContent = `${this.name} missed the attack!`
+      gameHistory.appendChild(document.createElement("p")).textContent = `${this.name} missed his shot!`
     }
   }
 
@@ -88,7 +88,7 @@ class AlienShip extends ship {
 const battle = (humanShip, AlienShip) => {
 
   while (humanShip.hull > 0 && AlienShip.hull > 0) {
-    console.log(`Your hull: ${humanShip.hull}, AlienShip hull: ${AlienShip.hull}`);
+    console.log(`Your lifeline: ${humanShip.hull}, AlienShip lifeline: ${AlienShip.hull}`);
 
     // humanShip attacks first
 
