@@ -131,7 +131,22 @@ const game = () => {
 
   // Loop through each alien ship and attack the human ship
   for (let i = 0; i < alienShips.length; i++) {
-    
+    if (gameOver) break;
+
+
     battle(humanShips, alienShips[i]);
+
+
+    if (humanShips.hull <= 0) {
+      console.log('Game Over!');
+      gameOver = true;
+    }else{
+      const retreat = window.prompt('Do you want to attack the next alien ship? (yes or no)');
+      if (retreat.toLowerCase() === 'no') {
+        console.log('You chose to retreat!');
+        gameOver = true;
+      }
+    }
   }
+
 }
