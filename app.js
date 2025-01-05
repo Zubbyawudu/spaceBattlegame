@@ -5,7 +5,10 @@ const header = document.querySelector("h1");
 const headerStart = document.querySelector(".spaceh2");
 const startBtn = document.querySelector("button");
 const gameHistory = document.querySelector("#gamecomments");
-
+const instructions = document.querySelector(".instrcutions");
+const howToPlay = document.querySelector("#howtoplay");
+const battleHistory = document.querySelector("#battlehistory");
+const htpContainer = document.querySelector(".commentscontainer");
 // start game alert message
 alert("Welcome , After reading the instructions Click on earth icon to initiate the game");
 
@@ -171,7 +174,10 @@ const startGame = () => {
   header.style.display = "none";
   headerStart.style.display = "block";
   startBtn.style.display = "block";
-  
+ 
+  howToPlay.style.display = "none";
+  battleHistory.style.display = "block";
+  htpContainer.style.display = "none";
 
 }
 startGameIcon.addEventListener("click", startGame);

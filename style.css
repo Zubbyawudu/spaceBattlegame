@@ -14,7 +14,7 @@ body {
 .commentscontainer {
   border: 1px solid black;
   margin: auto;
-  height: 10vh;
+  height: 20vh;
   width: 90%;
   margin-top: 19px;
 }
@@ -92,7 +92,7 @@ p {
   /* background-color: yellow; */
   border: 1px solid black;
   color: yellow;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0px;
   font-weight: bold;
   word-spacing: 5px;
