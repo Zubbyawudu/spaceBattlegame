@@ -126,4 +126,12 @@ const game = () => {
     { name: "AlienShip 2", hull: 5, firepower: 3, accuracy: 0.7 },
     { name: "AlienShip 3", hull: 6, firepower: 4, accuracy: 0.8 },
   ];
+
+  let gameOver = false;
+
+  // Loop through each alien ship and attack the human ship
+  for (let i = 0; i < alienShips.length; i++) {
+    
+    battle(humanShips, alienShips[i]);
+  }
 }
