@@ -3,7 +3,7 @@ const alienAircraft = document.querySelector(".alienspaceships");
 const startGameIcon = document.querySelector(".startgameicon");
 const header = document.querySelector("h1");
 const headerStart = document.querySelector(".spaceh2");
-const startbtn = document.querySelector("button");
+const startBtn = document.querySelector("button");
 const gameHistory = document.querySelector("#gamecomments");
 
 // start game alert message
@@ -46,14 +46,14 @@ class ship{
 }
 
 // create a class for humanShip
-class humanShip extends Ship{
+class humanShip extends ship{
   constructor(name, hull , firepower, accuracy){
     super("USS Assembly", 20 , 5, .7);
   }
 }
 
 // create a class for alienShip
-class AlienShip extends Ship {
+class AlienShip extends ship {
   constructor() {
     // generate Hull between 3 and 6
     const hull = Math.floor(Math.random() * 4) + 3; 
@@ -104,7 +104,7 @@ const battle = (humanShip, AlienShip) => {
 
     // AlienShip attacks back if it survived
 
-    AlienShip.attack(humanShip);
+    // AlienShip.attack(humanShip);
 
     if (humanShip.hull <= 0) {
       
@@ -164,8 +164,16 @@ const startGame = () => {
   startGameIcon.style.display = "none";
   header.style.display = "none";
   headerStart.style.display = "block";
-  startbtn.style.display = "block";
+  startBtn.style.display = "block";
   
 
 }
 startGameIcon.addEventListener("click", startGame);
+
+//Start to Play button
+const play = () =>{
+  headerStart.style.display = "none";
+  startBtn.style.display = "none";
+  game();
+}
+startBtn.addEventListener("click", play);
