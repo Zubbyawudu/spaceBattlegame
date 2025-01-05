@@ -1,0 +1,99 @@
+body {
+  background: url(https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?q=80&w=2113&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D),
+    center, no-repeat;
+}
+.gamecontainer {
+  border: solid black;
+  height: 70vh;
+  width: 70%;
+  margin: auto;
+  background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3V0a3A1c2w2ZnBvNjYzdnJpM29tN3I1cmljaWhwdGVqaDJydm9zcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l1Et7Qw1XjvunS0Io/giphy.webp);
+  background-size: cover;
+  background-position: center;
+}
+.commentscontainer {
+  border: 1px solid black;
+  margin: auto;
+  height: auto;
+  width: 90%;
+  margin-top: 19px;
+}
+.charcontainer {
+  border: solid blue;
+  height: 13vh;
+  display: flex;
+  margin: 10px;
+  margin-left: 15%;
+  width: 70%;
+  justify-content: center;
+}
+.warriors {
+  /* border: solid black; */
+  height: 10vh;
+  margin: 10px;
+  width: 15%;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.startgameicon {
+  /* border: solid blue; */
+  height: 12vh;
+  width: 20%;
+}
+
+.player {
+  /* border: solid red; */
+  color: yellow;
+  font-size: 23px;
+  text-align: center;
+}
+.alienspaceships {
+  display: flex;
+  justify-content: space-around;
+  display: none;
+  margin-top: 10%;
+}
+.humanship {
+  margin-top: 25%;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+h1 {
+  color: yellow;
+  font-family: "roboto";
+  margin-top: 15%;
+  text-align: center;
+}
+.start {
+  /* border: solid white; */
+  display: flex;
+  justify-content: center;
+}
+button {
+  background-color: rgba(220, 220, 101, 0.995);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 12px;
+  cursor: pointer;
+  display: none;
+}
+.spaceh2 {
+  text-align: center;
+  display: none;
+}
+p {
+  /* background-color: yellow; */
+  border: 1px solid black;
+  color: yellow;
+  font-size: 25px;
+  margin: 0px;
+  font-weight: bold;
+  word-spacing: 5px;
+}
