@@ -67,3 +67,19 @@ class AlienShip extends Ship {
     super(hull, firepower, accuracy);
   }
 }
+
+class Alienship1 extends Ship {
+  constructor(){
+    super("Alienship 1", 4 , 2, .6);
+  }
+}
+class Alienship2 extends Ship {
+  constructor(){
+    super("Alienship 2", 5 , 3, .7);
+  }
+}
+class Alienship3 extends Ship {
+  constructor(){
+    super("Alienship 3", 6 , 3, .8);
+  }
+}
