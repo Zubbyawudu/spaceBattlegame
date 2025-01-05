@@ -88,6 +88,9 @@ class AlienShip extends ship {
 const battle = (humanShip, AlienShip) => {
 
   while (humanShip.hull > 0 && AlienShip.hull > 0) {
+    
+    gameHistory.appendChild(document.createElement("p")).textContent = `Your lifeline: ${humanShip.hull}, AlienShip lifeline: ${AlienShip.hull}`
+    
     console.log(`Your lifeline: ${humanShip.hull}, AlienShip lifeline: ${AlienShip.hull}`);
 
     // humanShip attacks first
@@ -95,6 +98,7 @@ const battle = (humanShip, AlienShip) => {
     humanShip.attack(AlienShip);
 
     if (AlienShip.hull <= 0) {
+      gameHistory.appendChild(document.createElement("p")).textContent = 'Great Job! You destroyed the AlienShip ship!'
       
       console.log('You destroyed the AlienShip ship!');
 
@@ -107,6 +111,7 @@ const battle = (humanShip, AlienShip) => {
     // AlienShip.attack(humanShip);
 
     if (humanShip.hull <= 0) {
+      gameHistory.appendChild(document.createElement("p")).textContent = 'Your ship has been destroyed!'
       
       console.log('You have been destroyed!');
 
@@ -138,6 +143,7 @@ const game = () => {
 
 
     if (humanShips.hull <= 0) {
+      gameHistory.appendChild(document.createElement("p")).textContent = 'Game Over!'
       console.log('Game Over!');
       gameOver = true;
     }else{
@@ -150,7 +156,7 @@ const game = () => {
   }
 
   if (humanShips.hull > 0) {
-    
+    gameHistory.appendChild(document.createElement("p")).textContent = 'Bravo! You have Saved the planet Earth!'
     console.log('You have destroyed all the aliens and won the game!');
   }
 
