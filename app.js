@@ -89,5 +89,31 @@ const battle = (humanShip, AlienShip) => {
 
   while (humanShip.hull > 0 && AlienShip.hull > 0) {
     console.log(`Your hull: ${humanShip.hull}, AlienShip hull: ${AlienShip.hull}`);
+
+    // humanShip attacks first
+
+    humanShip.attack(AlienShip);
+
+    if (AlienShip.hull <= 0) {
+      
+      console.log('You destroyed the AlienShip ship!');
+
+      break;
+
+    }
+
+    // AlienShip attacks back if it survived
+
+    AlienShip.attack(humanShip);
+
+    if (humanShip.hull <= 0) {
+      
+      console.log('You have been destroyed!');
+
+      break;
+
+    }
+
   }
+
 }
