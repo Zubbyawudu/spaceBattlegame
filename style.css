@@ -14,7 +14,7 @@ body {
 .commentscontainer {
   border: 1px solid black;
   margin: auto;
-  height: auto;
+  height: 10vh;
   width: 90%;
   margin-top: 19px;
 }
@@ -97,7 +97,14 @@ p {
   font-weight: bold;
   word-spacing: 5px;
 }
-h2 {
+#battlehistory {
+  text-align: center;
+  color: yellowgreen;
+  font-family: "roboto";
+  font-size: 30px;
+  display: none;
+}
+#howtoplay {
   text-align: center;
   color: yellowgreen;
   font-family: "roboto";

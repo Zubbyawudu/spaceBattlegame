@@ -7,7 +7,7 @@ const startBtn = document.querySelector("button");
 const gameHistory = document.querySelector("#gamecomments");
 
 // start game alert message
-alert("Welcome , Click on earth icon to iniciate the game");
+alert("Welcome , After reading the instructions Click on earth icon to initiate the game");
 
 // Class object of the all the spaceships
 class ship{
@@ -89,7 +89,7 @@ const battle = (humanShip, AlienShip) => {
 
   while (humanShip.hull > 0 && AlienShip.hull > 0) {
     
-    gameHistory.appendChild(document.createElement("p")).textContent = `Your lifeline: ${humanShip.hull}, AlienShip lifeline: ${AlienShip.hull}`
+    gameHistory.appendChild(document.createElement("p")).textContent = `Your lifeline is : ${humanShip.hull}, AlienShip lifeline is : ${AlienShip.hull}`
     
     console.log(`Your lifeline: ${humanShip.hull}, AlienShip lifeline: ${AlienShip.hull}`);
 
