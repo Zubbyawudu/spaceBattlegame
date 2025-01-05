@@ -19,7 +19,7 @@ class ship{
 
   }
 
-  // attack function
+  // attack player function
 
   attack(target) {
     const hitChance = Math.random();
