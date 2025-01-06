@@ -174,7 +174,6 @@ const startGame = () => {
   header.style.display = "none";
   headerStart.style.display = "block";
   startBtn.style.display = "block";
- 
   howToPlay.style.display = "none";
   battleHistory.style.display = "block";
   htpContainer.style.display = "none";
